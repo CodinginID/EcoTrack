@@ -1,0 +1,6 @@
+*.env
+app/env
+__pychace__
+venv
+*.venv
+.idea
