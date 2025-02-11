@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWaste - Pengelolaan Sampah Modern</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
 </head>
+
 <body class="bg-blue-400">
 
     <!-- Navbar -->
@@ -14,16 +18,22 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
                     <span class="text-white text-2xl font-bold">🌱 EcoWaste</span>
-                    <a href="#about" class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Tentang Kami</a>
-                    <a href="#contribute" class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Kontribusi</a>
+                    <a href="#about"
+                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Tentang Kami</a>
+                    <a href="#contribute"
+                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Kontribusi</a>
                 </div>
                 <div class="flex space-x-4">
-                    <a href="#login" class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-5 h-5 mr-2">
+                    <a href="#login"
+                        class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
+                            class="w-5 h-5 mr-2">
                         Masuk
                     </a>
-                    <a href="#signup" class="bg-blue-700 hover:bg-emerald-800 text-white px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-5 h-5 mr-2 filter brightness-0 invert">
+                    <a href="#signup"
+                        class="bg-blue-700 hover:bg-emerald-800 text-white px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
+                            class="w-5 h-5 mr-2 filter brightness-0 invert">
                         Daftar
                     </a>
                 </div>
@@ -35,16 +45,21 @@
     <section class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h1 class="text-5xl font-bold mb-6">Kelola Sampah Lebih Bijak</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk lingkungan yang lebih bersih dan berkelanjutan</p>
-            
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk
+                lingkungan yang lebih bersih dan berkelanjutan</p>
+
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#login" class="bg-white hover:bg-gray-100 text-gray-700 px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
-                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-6 h-6 mr-2">
+                <a href="#login"
+                    class="bg-white hover:bg-gray-100 text-gray-700 px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
+                        class="w-6 h-6 mr-2">
                     Masuk dengan Google
                 </a>
-                
-                <a href="#signup" class="border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
-                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-6 h-6 mr-2 filter brightness-0 invert">
+
+                <a href="#signup"
+                    class="border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
+                        class="w-6 h-6 mr-2 filter brightness-0 invert">
                     Daftar dengan Google
                 </a>
             </div>
@@ -53,101 +68,110 @@
 
     <!-- Fitur -->
 
-      <!-- Slider Section -->
-      <section class="py-16 bg-white">
+    <!-- slider  -->
+    <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- Slider -->
+          <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
+          <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="w-full md:w-1/2">
                 <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="glide__slide">
-                                <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Daur Ulang Sampah" class="w-full h-auto rounded-lg shadow-lg">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="https://images.unsplash.com/photo-1584971934534-0c2bdfe0c6e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tempat Sampah Organik dan Anorganik" class="w-full h-auto rounded-lg shadow-lg">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff39?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Komunitas Peduli Lingkungan" class="w-full h-auto rounded-lg shadow-lg">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pengolahan Sampah Modern" class="w-full h-auto rounded-lg shadow-lg">
-                            </li>
-                            <li class="glide__slide">
-                                <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Edukasi Pengelolaan Sampah" class="w-full h-auto rounded-lg shadow-lg">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#10094;</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#10095;</button>
-                    </div>
-                </div>
-
-                <!-- Keterangan -->
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Solusi Pengelolaan Sampah Modern</h2>
-                    <p class="text-gray-600 mb-4">
-                        EcoWaste menyediakan solusi terintegrasi untuk mengelola sampah secara efisien. Dengan teknologi canggih, kami membantu Anda memantau, mengelola, dan mendaur ulang sampah dengan cara yang ramah lingkungan.
-                    </p>
-                    <ul class="list-disc list-inside text-gray-600">
-                        <li class="mb-2">Pelacakan sampah secara real-time</li>
-                        <li class="mb-2">Laporan pengelolaan sampah harian</li>
-                        <li class="mb-2">Integrasi dengan layanan daur ulang</li>
-                        <li class="mb-2">Edukasi tentang pengelolaan sampah</li>
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                      <li class="glide__slide">
+                        <img src="testing.jpg" alt="Alam Hijau" class="w-full h-80 object-cover rounded-lg shadow-md">
+                      </li>
+                      <li class="glide__slide">
+                        <img src="testing2.jpg" alt="Hutan Tropis" class="w-full h-80 object-cover rounded-lg shadow-md">
+                      </li>
+                      <li class="glide__slide">
+                        <img src="testing3.jpg" alt="Sungai Jernih" class="w-full h-80 object-cover rounded-lg shadow-md">
+                      </li>
                     </ul>
+                  </div>
+                  <div class="glide__arrows" data-glide-el="controls">
+                    <button data-glide-dir="<"
+                        class=" glide__arrow glide__arrow--left bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                    &lt; </button>
+                    <button data-glide-dir=">"
+                        class= " glide__arrow glide__arrow--right bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                    &gt; </button>
+                    <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button> -->
+                  </div>
                 </div>
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="slide-description">
+                  <h2 class="text-2xl font-semibold text-gray-800">Alam Hijau</h2>
+                  <p class="text-gray-600 mt-2 leading-relaxed">
+                    Keindahan alam yang harus kita jaga. Hutan hijau menyediakan oksigen, habitat, dan keseimbangan ekosistem.
+                  </p>
+                </div>
+                <div class="slide-description hidden">
+                  <h2 class="text-2xl font-semibold text-gray-800">Hutan Tropis</h2>
+                  <p class="text-gray-600 mt-2 leading-relaxed">
+                    Hutan tropis kaya akan keanekaragaman hayati dan berperan penting dalam menyerap karbon serta mengatur iklim global.
+                  </p>
+                </div>
+                <div class="slide-description hidden">
+                  <h2 class="text-2xl font-semibold text-gray-800">Sungai Jernih</h2>
+                  <p class="text-gray-600 mt-2 leading-relaxed">
+                    Sungai yang bersih menjadi sumber kehidupan. Penting untuk menjaga kebersihan air agar ekosistem tetap seimbang.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Visi dan Misi -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="hidden md:block relative">
-                    <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
-                        <div class="text-3xl font-bold mb-4">Visi dan Misi</div>
-                        <p class="text-lg text-gray-600">EcoWaste memiliki visi dan misi untuk membuat pengelolaan sampah yang lebih ramah lingkungan dan berkelanjutan</p>
-                    </div>
-                    <div class="absolute top-0 right-0 p-4 bg-white rounded-bl-md shadow-md">
-                        <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="text-lg text-gray-600 mb-4">EcoWaste berkomitmen untuk mengurangi dampak negatif sampah terhadap lingkungan dan meningkatkan kesadaran masyarakat akan pentingnya pengelolaan sampah yang baik</div>
-                    <ul class="list-disc list-inside">
-                        <li>Mengurangi jumlah sampah yang dihasilkan</li>
-                        <li>Meningkatkan kesadaran masyarakat akan pentingnya pengelolaan sampah yang baik</li>
-                        <li>Mengembangkan teknologi yang ramah lingkungan untuk mengelola sampah</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+      </section>
+    <!-- slider  -->
+    <!-- Fitur -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
                     <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
                 </div>
-                
+
                 <!-- Tambahkan fitur lainnya di sini -->
+                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="text-emerald-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
+                    <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
+                </div>
+                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
+                    <div class="text-emerald-600 mb-4">
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
+                    <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- section google map -->
     <!-- Section Google Map -->
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
@@ -155,25 +179,25 @@
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="w-full md:w-1/2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.97474154695!2d106.83333333333333!3d-6.175555555555555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f1c9f2c011%3A0x1a9a3f1f3c9c5e5!2sJl.%20Pondok%20Indah%20Raya%2C%20Pondok%20Indah%2C%20Kec.%20Kebayoran%20Lama%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012310!5e0!3m2!1sid!2sid!4v1643761111111!5m2!1sid!2sid" 
-                            width="100%" 
-                            height="400" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.97474154695!2d106.83333333333333!3d-6.175555555555555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f1c9f2c011%3A0x1a9a3f1f3c9c5e5!2sJl.%20Pondok%20Indah%20Raya%2C%20Pondok%20Indah%2C%20Kec.%20Kebayoran%20Lama%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012310!5e0!3m2!1sid!2sid!4v1643761111111!5m2!1sid!2sid"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                     <div class="w-full md:w-1/2">
                         <div class="bg-white rounded-xl shadow-lg p-6">
                             <h3 class="text-2xl font-bold mb-4">Kontak Kami</h3>
-                            <p class="text-lg text-gray-600">Jika Anda memiliki pertanyaan atau ingin menghubungi kami, silakan gunakan form kontak di bawah ini atau menghubungi kami melalui nomor telepon dan alamat email yang tertera di bawah ini.</p>
+                            <p class="text-lg text-gray-600">Jika Anda memiliki pertanyaan atau ingin menghubungi kami,
+                                silakan gunakan form kontak di bawah ini atau menghubungi kami melalui nomor telepon dan
+                                alamat email yang tertera di bawah ini.</p>
                             <div class="mt-6">
                                 <span class="text-lg text-gray-600">Telepon:</span>
                                 <a href="tel:+6221500000" class="text-blue-500 hover:text-blue-700">(021) 500000</a>
                             </div>
                             <div class="mt-2">
                                 <span class="text-lg text-gray-600">Email:</span>
-                                <a href="mailto:info@ecowaste.id" class="text-blue-500 hover:text-blue-700">info@ecowaste.id</a>
+                                <a href="mailto:info@ecowaste.id"
+                                    class="text-blue-500 hover:text-blue-700">info@ecowaste.id</a>
                             </div>
                         </div>
                         <!-- <p class="text-lg text-gray-600">Kami berlokasi di Jalan Pondok Indah Raya, Pondok Indah, Kecamatan Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p> -->
@@ -184,18 +208,14 @@
     </section>
     <!-- section google map -->
 
+
     <!-- Google Form Section -->
     <section class="bg-gray-50 py-16">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Bergabung dengan Komunitas</h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
-                <iframe src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true" 
-                        width="100%" 
-                        height="800" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0"
-                        class="rounded-lg">
+                <iframe src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true" width="100%"
+                    height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
                     Memuat...
                 </iframe>
             </div>
@@ -210,16 +230,31 @@
     </footer>
 
     <!-- Glide.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.0/dist/glide.min.js"></script>
-    <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            autoplay: 3000,
-            hoverpause: true,
-            perView: 1,
-            gap: 0
-        }).mount();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const glide = new Glide('.glide', {
+        type: 'carousel',
+        perView: 1,
+        autoplay: 4000,
+        hoverpause: true,
+      });
+
+      glide.on('run.after', () => {
+        let currentIndex = glide.index;
+        let descriptions = document.querySelectorAll(".slide-description");
+
+        descriptions.forEach((desc, index) => {
+          desc.classList.toggle("hidden", index !== currentIndex);
+        });
+      });
+
+      glide.mount();
+      lucide.createIcons();
+    });
+  </script>
 
 </body>
+
 </html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWaste - Pengelolaan Sampah Modern</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glidejs/3.6.0/css/glide.core.min.css">
+    <style>
+        /* Optional: Add custom styles here if needed */
+        .glide__slide {
+            height: 400px; /* Adjust as needed */
+        }
+
+        .glide__slide img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-blue-400">
+
+    <nav class="bg-emerald-600 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-white text-2xl font-bold">🌱 EcoWaste</a>
+                </div>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-6">Kelola Sampah Lebih Bijak</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk
+                lingkungan yang lebih bersih dan berkelanjutan</p>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2 relative">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <img src="testing.jpg" alt="Alam Hijau" class="w-full h-full">
+                                    </li>
+                                    <li class="glide__slide">
+                                        <img src="testing.jpg" alt="Hutan Tropis" class="w-full h-full">
+                                    </li>
+                                    <li class="glide__slide">
+                                        <img src="testing.jpg" alt="Sungai Jernih" class="w-full h-full">
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div data-glide-el="controls"
+                                class="absolute inset-0 flex justify-between items-center px-4">
+                                <button data-glide-dir="<"
+                                    class="bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                                    &lt; </button>
+                                <button data-glide-dir=">"
+                                    class="bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                                    &gt; </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="slide-description">
+                            <h2 class="text-2xl font-semibold text-gray-800">Alam Hijau</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Keindahan alam yang harus kita jaga. Hutan hijau menyediakan oksigen, habitat, dan
+                                keseimbangan ekosistem.
+                            </p>
+                        </div>
+                        <div class="slide-description hidden">
+                            <h2 class="text-2xl font-semibold text-gray-800">Hutan Tropis</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Hutan tropis kaya akan keanekaragaman hayati dan berperan penting dalam menyerap karbon
+                                serta mengatur iklim global.
+                            </p>
+                        </div>
+                        <div class="slide-description hidden">
+                            <h2 class="text-2xl font-semibold text-gray-800">Sungai Jernih</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Sungai yang bersih menjadi sumber kehidupan. Penting untuk menjaga kebersihan air agar
+                                ekosistem tetap seimbang.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glidejs/3.6.0/glide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const glide = new Glide('.glide', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 4000,
+                hoverpause: true,
+            });
+
+            glide.on('run.after', () => {
+                let currentIndex = glide.index;
+                let descriptions = document.querySelectorAll(".slide-description");
+
+                descriptions.forEach((desc, index) => {
+                    desc.classList.toggle("hidden", index !== currentIndex);
+                });
+            });
+
+            glide.mount();
+        });
+    </script>
+
+</body>
+
+</html>

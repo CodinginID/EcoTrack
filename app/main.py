@@ -14,7 +14,7 @@ db = firestore.client()
 # Route Home
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index2.html")
 
 # Route Login dengan Google
 @app.route('/login')
