@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoWaste - Pengelolaan Sampah Modern</title>
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/475656/google-color.svg" type="image/x-icon">
+    <title>🌱 EcoWaste - Pengelolaan Sampah Modern</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-blue-400">
@@ -30,12 +34,12 @@
                             class="w-5 h-5 mr-2">
                         Masuk
                     </a>
-                    <a href="#signup"
+                    <!-- <a href="#signup"
                         class="bg-blue-700 hover:bg-emerald-800 text-white px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
                             class="w-5 h-5 mr-2 filter brightness-0 invert">
                         Daftar
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -71,60 +75,66 @@
     <!-- slider  -->
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
-          <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
-          <div class="bg-white rounded-xl shadow-lg p-6">
-            <div class="flex flex-col md:flex-row gap-4">
-              <div class="w-full md:w-1/2">
-                <div class="glide">
-                  <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                      <li class="glide__slide">
-                        <img src="testing.jpg" alt="Alam Hijau" class="w-full h-80 object-cover rounded-lg shadow-md">
-                      </li>
-                      <li class="glide__slide">
-                        <img src="testing2.jpg" alt="Hutan Tropis" class="w-full h-80 object-cover rounded-lg shadow-md">
-                      </li>
-                      <li class="glide__slide">
-                        <img src="testing3.jpg" alt="Sungai Jernih" class="w-full h-80 object-cover rounded-lg shadow-md">
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="glide__arrows" data-glide-el="controls">
-                    <button data-glide-dir="<"
-                        class=" glide__arrow glide__arrow--left bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
-                    &lt; </button>
-                    <button data-glide-dir=">"
-                        class= " glide__arrow glide__arrow--right bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
-                    &gt; </button>
-                    <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="w-full md:w-1/2">
+                        <div class="glide">
+                            <div class="glide__track" data-glide-el="track">
+                                <ul class="glide__slides">
+                                    <li class="glide__slide">
+                                        <img src="testing.jpg" alt="Alam Hijau"
+                                            class="w-full h-80 object-cover rounded-lg shadow-md">
+                                    </li>
+                                    <li class="glide__slide">
+                                        <img src="testing2.jpg" alt="Hutan Tropis"
+                                            class="w-full h-80 object-cover rounded-lg shadow-md">
+                                    </li>
+                                    <li class="glide__slide">
+                                        <img src="testing3.jpg" alt="Sungai Jernih"
+                                            class="w-full h-80 object-cover rounded-lg shadow-md">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button data-glide-dir="<"
+                                    class=" glide__arrow glide__arrow--left bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                                    &lt; </button>
+                                <button data-glide-dir=">"
+                                    class=" glide__arrow glide__arrow--right bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
+                                    &gt; </button>
+                                <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button> -->
-                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div class="slide-description">
+                            <h2 class="text-2xl font-semibold text-gray-800">Alam Hijau</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Keindahan alam yang harus kita jaga. Hutan hijau menyediakan oksigen, habitat, dan
+                                keseimbangan ekosistem.
+                            </p>
+                        </div>
+                        <div class="slide-description hidden">
+                            <h2 class="text-2xl font-semibold text-gray-800">Hutan Tropis</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Hutan tropis kaya akan keanekaragaman hayati dan berperan penting dalam menyerap karbon
+                                serta mengatur iklim global.
+                            </p>
+                        </div>
+                        <div class="slide-description hidden">
+                            <h2 class="text-2xl font-semibold text-gray-800">Sungai Jernih</h2>
+                            <p class="text-gray-600 mt-2 leading-relaxed">
+                                Sungai yang bersih menjadi sumber kehidupan. Penting untuk menjaga kebersihan air agar
+                                ekosistem tetap seimbang.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="w-full md:w-1/2">
-                <div class="slide-description">
-                  <h2 class="text-2xl font-semibold text-gray-800">Alam Hijau</h2>
-                  <p class="text-gray-600 mt-2 leading-relaxed">
-                    Keindahan alam yang harus kita jaga. Hutan hijau menyediakan oksigen, habitat, dan keseimbangan ekosistem.
-                  </p>
-                </div>
-                <div class="slide-description hidden">
-                  <h2 class="text-2xl font-semibold text-gray-800">Hutan Tropis</h2>
-                  <p class="text-gray-600 mt-2 leading-relaxed">
-                    Hutan tropis kaya akan keanekaragaman hayati dan berperan penting dalam menyerap karbon serta mengatur iklim global.
-                  </p>
-                </div>
-                <div class="slide-description hidden">
-                  <h2 class="text-2xl font-semibold text-gray-800">Sungai Jernih</h2>
-                  <p class="text-gray-600 mt-2 leading-relaxed">
-                    Sungai yang bersih menjadi sumber kehidupan. Penting untuk menjaga kebersihan air agar ekosistem tetap seimbang.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
     <!-- slider  -->
     <!-- Fitur -->
     <section class="py-16 bg-white">
@@ -132,41 +142,26 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                            </path>
-                        </svg>
+                        <i class="fa-regular fa-calendar-days fa-2x"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
-                    <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
+                    <h3 class="text-xl font-bold mb-2">Jadwal Pengumpulan</h3>
+                    <p class="text-gray-600">Lihat jadwal pengumpulan sampah di area Anda.</p>
                 </div>
-
-                <!-- Tambahkan fitur lainnya di sini -->
+            
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                            </path>
-                        </svg>
+                        <i class="fa-solid fa-circle-info fa-2x"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
-                    <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
+                    <h3 class="text-xl font-bold mb-2">Informasi Daur Ulang</h3>
+                    <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur ulang.</p>
                 </div>
+            
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
-                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
-                            </path>
-                        </svg>
+                        <i class="fa-solid fa-chart-pie fa-2x"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Pelacakan Real-time</h3>
-                    <p class="text-gray-600">Pantau pergerakan sampah dari sumber hingga tempat daur ulang</p>
+                    <h3 class="text-xl font-bold mb-2">Statistik Sampah</h3>
+                    <p class="text-gray-600">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
                 </div>
             </div>
         </div>
@@ -214,13 +209,35 @@
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Bergabung dengan Komunitas</h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
-                <iframe src="https://docs.google.com/forms/d/e/[FORM_ID]/viewform?embedded=true" width="100%"
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true" width="100%"
                     height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
                     Memuat...
                 </iframe>
             </div>
         </div>
     </section>
+
+    <!-- More Info Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-500 mb-8">More Info</h2>
+            <div class="flex justify-center gap-8">
+                <a href="https://www.instagram.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.svgrepo.com/show/111199/instagram.svg" alt="Instagram Logo" class="w-12 h-12">
+                </a>
+                <a href="https://www.twitter.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" alt="Twitter Logo" class="w-12 h-12">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.tiktok.com/favicon.ico" alt="Tiktok Logo" class="w-12 h-12">
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="bg-emerald-600 text-white py-8">
@@ -231,29 +248,29 @@
 
     <!-- Glide.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const glide = new Glide('.glide', {
-        type: 'carousel',
-        perView: 1,
-        autoplay: 4000,
-        hoverpause: true,
-      });
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const glide = new Glide('.glide', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 4000,
+                hoverpause: true,
+            });
 
-      glide.on('run.after', () => {
-        let currentIndex = glide.index;
-        let descriptions = document.querySelectorAll(".slide-description");
+            glide.on('run.after', () => {
+                let currentIndex = glide.index;
+                let descriptions = document.querySelectorAll(".slide-description");
 
-        descriptions.forEach((desc, index) => {
-          desc.classList.toggle("hidden", index !== currentIndex);
+                descriptions.forEach((desc, index) => {
+                    desc.classList.toggle("hidden", index !== currentIndex);
+                });
+            });
+
+            glide.mount();
+            lucide.createIcons();
         });
-      });
-
-      glide.mount();
-      lucide.createIcons();
-    });
-  </script>
+    </script>
 
 </body>
 

@@ -55,7 +55,8 @@ def logout():
 # Integrasi Google Form
 @app.route('/submit_form', methods=["POST"])
 def submit_form():
-    google_form_url = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse"
+    idForm = "1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA"
+    google_form_url = f"https://docs.google.com/forms/d/e/{idForm}/formResponse"
     form_data = {
         "entry.YOUR_ENTRY_ID": request.form["name"],
         "entry.YOUR_OTHER_ENTRY_ID": request.form["email"]
@@ -65,3 +66,5 @@ def submit_form():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+# https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?usp=dialog
