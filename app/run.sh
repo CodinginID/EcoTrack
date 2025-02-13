@@ -5,7 +5,7 @@
 # source venv/Scripts/activate  # Untuk Windows (gunakan di cmd atau Git Bash)
 
 # Set environment variables untuk mode development
-export FLASK_APP=main.py
+export FLASK_APP=app.py
 export FLASK_ENV=development
 
 # Jalankan aplikasi Flask
