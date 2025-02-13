@@ -5,43 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.svgrepo.com/show/475656/google-color.svg" type="image/x-icon">
-    <title>🌱 EcoWaste - Pengelolaan Sampah Modern</title>
+    <title>🌱 Angkasa - Pengelolaan Sampah Modern</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-blue-400">
+<body class="bg-blue-900">
 
     <!-- Navbar -->
     <nav class="bg-emerald-600 shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <span class="text-white text-2xl font-bold">🌱 EcoWaste</span>
-                    <a href="#about"
+                    <span class="text-white text-2xl font-bold">🌱 Angkasa</span>
+
+                    <!-- Tombol Hamburger -->
+                    <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <!-- <a href="#about"
                         class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Tentang Kami</a>
                     <a href="#contribute"
-                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Kontribusi</a>
+                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Kontribusi</a> -->
                 </div>
-                <div class="flex space-x-4">
+                <!-- Menu -->
+                <div id="nav-menu" class="hidden lg:flex space-x-4">
+                    <a href="#about" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold">Tentang
+                        Kami</a>
+                    <a href="#contribute"
+                        class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold">Bergabung</a>
+                </div>
+
+                <!-- <div class="flex space-x-4">
                     <a href="#login"
                         class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
                             class="w-5 h-5 mr-2">
                         Masuk
                     </a>
-                    <!-- <a href="#signup"
-                        class="bg-blue-700 hover:bg-emerald-800 text-white px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
+                </div> -->
+                <!-- Login Button -->
+                <div class="hidden lg:flex">
+                    <a href="#login"
+                        class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
                         <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
-                            class="w-5 h-5 mr-2 filter brightness-0 invert">
-                        Daftar
-                    </a> -->
+                            class="w-5 h-5 mr-2">
+                        Masuk
+                    </a>
                 </div>
             </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-emerald-700">
+            <a href="#about" class="block text-white text-lg px-4 py-2"><b>Tentang Kami</b></a>
+            <a href="#contribute" class="block text-white text-lg px-4 py-2"><b>Bergabung</b></a>
+            <a href="#login"
+                class="bg-white hover:bg-gray-100 text-gray-700 w-auto px-4 py-2 rounded-full font-medium flex items-center transition duration-300 shadow-md max-w-xs">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-5 h-5 mr-2">
+                Masuk dengan Google
+            </a>
         </div>
     </nav>
 
@@ -73,7 +98,7 @@
     <!-- Fitur -->
 
     <!-- slider  -->
-    <section class="py-16">
+    <section class="py-16" id="about">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
@@ -83,16 +108,16 @@
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
                                     <li class="glide__slide">
-                                        <img src="testing.jpg" alt="Alam Hijau"
+                                        <img src="{{url_for('static', filename='images/testing.jpg')}}" alt="Alam Hijau"
                                             class="w-full h-80 object-cover rounded-lg shadow-md">
                                     </li>
                                     <li class="glide__slide">
-                                        <img src="testing2.jpg" alt="Hutan Tropis"
-                                            class="w-full h-80 object-cover rounded-lg shadow-md">
+                                        <img src="  {{url_for('static', filename='images/testing2.jpg')}}"
+                                            alt="Hutan Tropis" class="w-full h-80 object-cover rounded-lg shadow-md">
                                     </li>
                                     <li class="glide__slide">
-                                        <img src="testing3.jpg" alt="Sungai Jernih"
-                                            class="w-full h-80 object-cover rounded-lg shadow-md">
+                                        <img src="{{url_for('static', filename='images/testing3.jpg')}}"
+                                            alt="Sungai Jernih" class="w-full h-80 object-cover rounded-lg shadow-md">
                                     </li>
                                 </ul>
                             </div>
@@ -147,15 +172,16 @@
                     <h3 class="text-xl font-bold mb-2">Jadwal Pengumpulan</h3>
                     <p class="text-gray-600">Lihat jadwal pengumpulan sampah di area Anda.</p>
                 </div>
-            
+
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
                         <i class="fa-solid fa-circle-info fa-2x"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Informasi Daur Ulang</h3>
-                    <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur ulang.</p>
+                    <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur
+                        ulang.</p>
                 </div>
-            
+
                 <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
                     <div class="text-emerald-600 mb-4">
                         <i class="fa-solid fa-chart-pie fa-2x"></i>
@@ -191,8 +217,8 @@
                             </div>
                             <div class="mt-2">
                                 <span class="text-lg text-gray-600">Email:</span>
-                                <a href="mailto:info@ecowaste.id"
-                                    class="text-blue-500 hover:text-blue-700">info@ecowaste.id</a>
+                                <a href="mailto:info@Angkasa.id"
+                                    class="text-blue-500 hover:text-blue-700">info@Angkasa.id</a>
                             </div>
                         </div>
                         <!-- <p class="text-lg text-gray-600">Kami berlokasi di Jalan Pondok Indah Raya, Pondok Indah, Kecamatan Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p> -->
@@ -205,12 +231,13 @@
 
 
     <!-- Google Form Section -->
-    <section class="bg-gray-50 py-16">
+    <section class="bg-gray-50 py-16" id="contribute">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Bergabung dengan Komunitas</h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true" width="100%"
-                    height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true"
+                    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
                     Memuat...
                 </iframe>
             </div>
@@ -228,7 +255,8 @@
                 </a>
                 <a href="https://www.twitter.com" target="_blank"
                     class="text-gray-700 hover:text-blue-500 transition duration-300">
-                    <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" alt="Twitter Logo" class="w-12 h-12">
+                    <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" alt="Twitter Logo"
+                        class="w-12 h-12">
                 </a>
                 <a href="https://www.tiktok.com" target="_blank"
                     class="text-gray-700 hover:text-blue-500 transition duration-300">
@@ -242,7 +270,7 @@
     <!-- Footer -->
     <footer class="bg-emerald-600 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-sm">&copy; 2024 EcoWaste. All rights reserved.</p>
+            <p class="text-sm">&copy; 2024 Angkasa. All rights reserved.</p>
         </div>
     </footer>
 
@@ -269,6 +297,11 @@
 
             glide.mount();
             lucide.createIcons();
+        });
+    </script>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
         });
     </script>
 
