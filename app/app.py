@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, j
 import firebase_admin
 from firebase_admin import credentials, auth, firestore
 import requests
+import os
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
@@ -65,6 +66,4 @@ def submit_form():
     return jsonify({"message": "Form submitted successfully!"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-# https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?usp=dialog
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
