@@ -1,6 +1,6 @@
 *.env
-__pychace__
+__pychace__/
 venv
-*.venv
+*.venv/
 .idea
-env
+env/
