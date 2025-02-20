@@ -12,61 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body class="bg-blue-900">
+<body class="bg-purple-700"> 
 
     <!-- Navbar -->
     <nav class="bg-emerald-600 shadow-lg">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <span class="text-white text-2xl font-bold">🌱 Angkasa</span>
-
-                    <!-- Tombol Hamburger -->
+                    <a href="{{url_for('home')}}" class="text-white text-2xl font-bold">
+                        <img src="{{url_for('static', filename='images/Logo_Angkasa.png')}}" alt="Logo" class="w-10 h-10 inline-block mr-2">
+                    </a>
                     <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
                         <i class="fas fa-bars"></i>
                     </button>
-                    <!-- <a href="#about"
-                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Tentang Kami</a>
-                    <a href="#contribute"
-                        class="text-white text-xl font-bold px-3 py-2 rounded-md text-sm font-medium">Kontribusi</a> -->
                 </div>
                 <!-- Menu -->
-                <div id="nav-menu" class="hidden lg:flex space-x-4">
-                    <a href="#about" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold">Tentang
-                        Kami</a>
-                    <a href="#contribute"
-                        class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold">Bergabung</a>
-                </div>
-
-                <!-- <div class="flex space-x-4">
-                    <a href="#login"
-                        class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
-                            class="w-5 h-5 mr-2">
-                        Masuk
-                    </a>
-                </div> -->
-                <!-- Login Button -->
-                <div class="hidden lg:flex">
-                    <a href="{{url_for('login')}}"
-                        class="bg-white hover:bg-gray-100 text-gray-700 px-6 py-2 rounded-full font-medium flex items-center transition duration-300">
-                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
-                            class="w-5 h-5 mr-2">
-                        Masuk
-                    </a>
+                <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
+                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
+                    <a href="{{url_for('form_question')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Question</a>
+                    <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden lg:hidden bg-emerald-700">
-            <a href="#about" class="block text-white text-lg px-4 py-2"><b>Tentang Kami</b></a>
-            <a href="#contribute" class="block text-white text-lg px-4 py-2"><b>Bergabung</b></a>
-            <a href="{{url_for('login')}}"
-                class="bg-white hover:bg-gray-100 text-gray-700 w-auto px-4 py-2 rounded-full font-medium flex items-center transition duration-300 shadow-md max-w-xs">
-                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo" class="w-5 h-5 mr-2">
-                Masuk dengan Google
-            </a>
+        <div id="mobile-menu" class="hidden bg-emerald-700">
+            <div id="mobile-menu" class="hidden lg:hidden"></div>
+            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
+            <a href="{{url_for('form_question')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Question</a>
+            <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
+            </div>
         </div>
     </nav>
 
@@ -74,24 +51,7 @@
     <section class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <h1 class="text-5xl font-bold mb-6">Kelola Sampah Lebih Bijak</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk
-                lingkungan yang lebih bersih dan berkelanjutan</p>
-
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#login"
-                    class="bg-white hover:bg-gray-100 text-gray-700 px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
-                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
-                        class="w-6 h-6 mr-2">
-                    Masuk dengan Google
-                </a>
-
-                <a href="#signup"
-                    class="border-2 border-white hover:bg-white/10 text-white px-8 py-3 rounded-full font-semibold flex items-center justify-center transition duration-300">
-                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
-                        class="w-6 h-6 mr-2 filter brightness-0 invert">
-                    Daftar dengan Google
-                </a>
-            </div>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk lingkungan yang lebih bersih dan berkelanjutan</p>
         </div>
     </section>
 
@@ -100,7 +60,7 @@
     <!-- slider  -->
     <section class="py-16" id="about">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white text-center mb-8">Tentang Kami</h2>
+            <h2 class="text-3xl font-bold text-white text-center mb-8"></h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="w-full md:w-1/2">
@@ -124,12 +84,12 @@
                             <div class="glide__arrows" data-glide-el="controls">
                                 <button data-glide-dir="<"
                                     class=" glide__arrow glide__arrow--left bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
-                                    &lt; </button>
+                                    &lt; 
+                                </button>
                                 <button data-glide-dir=">"
                                     class=" glide__arrow glide__arrow--right bg-black bg-opacity-50 text-white rounded-full p-3 hover:bg-opacity-70 transition">
-                                    &gt; </button>
-                                <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button> -->
+                                    &gt; 
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -165,29 +125,61 @@
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="text-emerald-600 mb-4">
-                        <i class="fa-regular fa-calendar-days fa-2x"></i>
+                <a href="{{url_for('jejak_angka')}}" class="block no-underline">
+                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
+                        <img src="{{url_for('static', filename='images/Jejak_Angka.png')}}" alt="Jejak Angka" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Jejak Angka</h3>
+                            <p class="text-gray-600 text-sm">LLihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Jadwal Pengumpulan</h3>
-                    <p class="text-gray-600">Lihat jadwal pengumpulan sampah di area Anda.</p>
-                </div>
+                </a>
 
-                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="text-emerald-600 mb-4">
-                        <i class="fa-solid fa-circle-info fa-2x"></i>
+                <a href="{{url_for('form_question')}}" class="block no-underline">
+                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
+                        <img src="{{url_for('static', filename='images/Form_Quest.png')}}" alt="Form Quest" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Form Question</h3>
+                            <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur
+                            ulang.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Informasi Daur Ulang</h3>
-                    <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur
-                        ulang.</p>
-                </div>
+                </a>
+                
+                <a href="{{url_for('lokal_sampah')}}" class="block no-underline">
+                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
+                        <img src="{{url_for('static', filename='images/Lokal_Sampah.png')}}" alt="Lokal Sampah" class="w-16 h-16 rounded-full">
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold mb-2">Lokal Sampah</h3>
+                            <p class="text-gray-600">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
+                        </div>
+                    </div>
+                </a>
+                
 
-                <div class="p-6 border rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="text-emerald-600 mb-4">
-                        <i class="fa-solid fa-chart-pie fa-2x"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Statistik Sampah</h3>
-                    <p class="text-gray-600">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background and Objectives Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-500 mb-8">Latar Belakang dan Tujuan Program Angkasa</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Latar Belakang</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Program Angkasa hadir sebagai solusi untuk mengatasi permasalahan sampah yang semakin kompleks di era modern ini. Dengan meningkatnya jumlah penduduk dan aktivitas manusia, volume sampah yang dihasilkan juga semakin besar. Pengelolaan sampah yang tidak efektif dapat menyebabkan berbagai masalah lingkungan seperti pencemaran tanah, air, dan udara.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Tujuan</h3>
+                    <ul class="list-disc list-inside text-gray-600 leading-relaxed">
+                        <li>Meningkatkan kesadaran masyarakat tentang pentingnya pengelolaan sampah yang baik dan benar.</li>
+                        <li>Mengurangi volume sampah yang dibuang ke tempat pembuangan akhir melalui program daur ulang dan pengomposan.</li>
+                        <li>Mengembangkan teknologi dan inovasi dalam pengelolaan sampah untuk menciptakan lingkungan yang lebih bersih dan berkelanjutan.</li>
+                        <li>Mendorong partisipasi aktif masyarakat dalam program pengelolaan sampah melalui edukasi dan kampanye.</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -196,30 +188,19 @@
     <!-- Section Google Map -->
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-white text-center mb-8">Lokasi Kami</h2>
+            <!-- <h2 class="text-3xl font-bold text-white text-center mb-8">Lokasi Kami</h2> -->
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="flex flex-col md:flex-row gap-4">
                     <div class="w-full md:w-1/2">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.97474154695!2d106.83333333333333!3d-6.175555555555555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f1c9f2c011%3A0x1a9a3f1f3c9c5e5!2sJl.%20Pondok%20Indah%20Raya%2C%20Pondok%20Indah%2C%20Kec.%20Kebayoran%20Lama%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012310!5e0!3m2!1sid!2sid!4v1643761111111!5m2!1sid!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0731194129653!2d112.76692057619725!3d-7.345686272265262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e52bbd5d6e2d%3A0xb3be3a3075a6b0e0!2sPG-TK-SD-SMP-SMA%20Al%20Muslim%20Jatim!5e0!3m2!1sen!2sid!4v1740074074426!5m2!1sen!2sid"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
                     <div class="w-full md:w-1/2">
                         <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="text-2xl font-bold mb-4">Kontak Kami</h3>
-                            <p class="text-lg text-gray-600">Jika Anda memiliki pertanyaan atau ingin menghubungi kami,
-                                silakan gunakan form kontak di bawah ini atau menghubungi kami melalui nomor telepon dan
-                                alamat email yang tertera di bawah ini.</p>
-                            <div class="mt-6">
-                                <span class="text-lg text-gray-600">Telepon:</span>
-                                <a href="tel:+6221500000" class="text-blue-500 hover:text-blue-700">(021) 500000</a>
-                            </div>
-                            <div class="mt-2">
-                                <span class="text-lg text-gray-600">Email:</span>
-                                <a href="mailto:info@Angkasa.id"
-                                    class="text-blue-500 hover:text-blue-700">info@Angkasa.id</a>
-                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Lokasi Kami</h3>
+                            <p class="text-lg text-gray-600">SMP Al Muslim.</p>                    
                         </div>
                         <!-- <p class="text-lg text-gray-600">Kami berlokasi di Jalan Pondok Indah Raya, Pondok Indah, Kecamatan Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p> -->
                     </div>
@@ -228,21 +209,6 @@
         </div>
     </section>
     <!-- section google map -->
-
-
-    <!-- Google Form Section -->
-    <section class="bg-gray-50 py-16" id="contribute">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Bergabung dengan Komunitas</h2>
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true"
-                    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
-                    Memuat...
-                </iframe>
-            </div>
-        </div>
-    </section>
 
     <!-- More Info Section -->
     <section class="bg-gray-100 py-16">
@@ -270,7 +236,7 @@
     <!-- Footer -->
     <footer class="bg-emerald-600 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-sm">&copy; 2024 Angkasa. All rights reserved.</p>
+            <p class="text-sm">&copy; 2025 Angkasa. All rights reserved. powered by <b>CodinginID</b></p>
         </div>
     </footer>
 
@@ -299,12 +265,15 @@
             lucide.createIcons();
         });
     </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
     <script>
-        document.getElementById("menu-toggle").addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
         });
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

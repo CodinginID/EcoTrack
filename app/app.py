@@ -3,6 +3,12 @@ import firebase_admin
 from firebase_admin import credentials, auth, firestore
 import requests
 import os
+import logging
+
+
+# Setup logging
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 app.secret_key = "supersecretkey"
@@ -17,10 +23,24 @@ GOOGLE_CLIENT_ID = str(os.getenv("GOOGLE_CLIENT_ID"))
 GOOGLE_CLIENT_SECRET = str(os.getenv("GOOGLE_CLIENT_SECRET"))
 GOOGLE_REDIRECT_URI = str(os.getenv("GOOGLE_REDIRECT_URI"))
 
+API_URL = "https://sipsn.menlhk.go.id/sipsn/public/home/get_chart_data_sampah"
+
 # API Route Home
 @app.route('/')
 def home():
     return render_template("index2.html")
+
+@app.route('/jejak-angka')
+def jejak_angka():
+    return render_template("jejak_angka.html")
+
+@app.route('/form-question')
+def form_question():
+    return render_template("form_question.html")
+
+@app.route('/lokal-sampah')
+def lokal_sampah():
+    return render_template("lokal_sampah.html")
 
 # Route Login dengan Google
 @app.route("/login")
@@ -128,6 +148,7 @@ def logout():
     session.pop("user", None)
     return redirect(url_for("home"))
 
+
 # Integrasi Google Form
 @app.route('/submit_form', methods=["POST"])
 def submit_form():
@@ -147,6 +168,41 @@ def verify_google_token(id_token):
         return decoded_token
     except Exception as e:
         return None
+    
+
+@app.route("/get_data", methods=["POST"])
+def get_data():
+    try:
+        # Mengambil data dari body JSON request
+        data = request.get_json()
+        tahun = data.get("tahun", "2024")
+        id_propinsi = data.get("id_propinsi", "ALL")
+        id_district = data.get("id_district", "")
+
+        params = {
+            "jenis": "timbulan",
+            "tahun": tahun,
+            "id_propinsi": id_propinsi,
+            "id_district": id_district,
+            "id_das": 0
+        }
+
+        logger.info(f"Requesting data with params: {params}")  # Log parameter permintaan
+
+        response = requests.post(API_URL, json=params)  # Menggunakan POST
+        response.raise_for_status()  # Raise error jika response gagal
+
+        if response.text:
+            logger.info(f"API response received successfully: {response.status_code}")
+            logger.debug(f"Response JSON: {response.json()}")  # Log JSON response for debugging
+            return jsonify(response.json())  # Kirim data ke frontend
+        else:
+            logger.warning("Received empty response from API.")
+            return jsonify({"error": "Empty response from API"}), 500
+
+    except requests.exceptions.RequestException as e:
+        logger.error(f"API request failed: {e}", exc_info=True)  # Log error dengan stack trace
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":

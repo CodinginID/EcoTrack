@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.svgrepo.com/show/475656/google-color.svg" type="image/x-icon">
+    <title>🌱 Angkasa - Pengelolaan Sampah Modern</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body class="bg-purple-700"> 
+
+    <!-- Navbar -->
+    <nav class="bg-emerald-600 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="{{url_for('home')}}" class="text-white text-2xl font-bold">
+                        <img src="{{url_for('static', filename='images/Logo_Angkasa.png')}}" alt="Logo" class="w-10 h-10 inline-block mr-2">
+                    </a>
+                    <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
+                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
+                    <a href="{{url_for('form_question')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Question</a>
+                    <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden bg-emerald-700">
+            <div id="mobile-menu" class="hidden lg:hidden"></div>
+            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
+            <a href="{{url_for('form_question')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Question</a>
+            <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="bg-gray-50 py-16" id="cont</section>rib</section>ute">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Ajukan Pertanyaan</h2>
+            <p class="text-lg text-gray-700 mb-6"></p>
+                Kami sangat menghargai partisipasi Anda dalam membantu kami meningkatkan pengelolaan sampah. Jika Anda memiliki pertanyaan, saran, atau masukan mengenai cara kami mengelola sampah, silakan ajukan melalui formulir di bawah ini. Setiap pertanyaan dan saran Anda akan sangat berarti bagi kami dalam upaya menciptakan lingkungan yang lebih bersih dan sehat.
+            </p>
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true"
+                    width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
+                    Memuat...
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Info Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-blue-500 mb-8">More Info</h2>
+            <div class="flex justify-center gap-8">
+                <a href="https://www.instagram.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.svgrepo.com/show/111199/instagram.svg" alt="Instagram Logo" class="w-12 h-12">
+                </a>
+                <a href="https://www.twitter.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.svgrepo.com/show/303115/twitter-3-logo.svg" alt="Twitter Logo"
+                        class="w-12 h-12">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank"
+                    class="text-gray-700 hover:text-blue-500 transition duration-300">
+                    <img src="https://www.tiktok.com/favicon.ico" alt="Tiktok Logo" class="w-12 h-12">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-emerald-600 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 Angkasa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Glide.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const glide = new Glide('.glide', {
+                type: 'carousel',
+                perView: 1,
+                autoplay: 4000,
+                hoverpause: true,
+            });
+
+            glide.on('run.after', () => {
+                let currentIndex = glide.index;
+                let descriptions = document.querySelectorAll(".slide-description");
+
+                descriptions.forEach((desc, index) => {
+                    desc.classList.toggle("hidden", index !== currentIndex);
+                });
+            });
+
+            glide.mount();
+            lucide.createIcons();
+        });
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
