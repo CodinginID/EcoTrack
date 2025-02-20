@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.svgrepo.com/show/475656/google-color.svg" type="image/x-icon">
-    <title>🌱 Angkasa - Pengelolaan Sampah Modern</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/Logo_Angkasa.png')}}" type="image/x-icon">
+    <title>Angkasa - Pengelolaan Sampah Modern</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.theme.min.css">
@@ -52,11 +52,48 @@
             <p class="text-lg text-gray-700 mb-8">
                 Indonesia menghasilkan sekitar 64 juta ton sampah setiap tahunnya, dengan sebagian besar berasal dari rumah tangga. Pengelolaan sampah yang efektif sangat penting untuk menjaga kebersihan lingkungan dan kesehatan masyarakat. Upaya untuk meningkatkan daur ulang dan pengurangan sampah terus dilakukan oleh berbagai pihak.
             </p>
-            <div class="bg-white rounded-xl shadow-lg p-6">
-                <div id="data-sampah-result" class="text-gray-700 whitespace-pre-wrap">
-                    <!-- Data will be displayed here -->
-                     <img src="{{url_for('static', filename='images/jejak_angka_sampah.png')}}" alt="">
+        </div>
+    </section>
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-center">{{ chart_data.title }}</h2>
+                <!-- Canvas untuk Chart -->
+                <div class="flex justify-center">
+                    <canvas id="myChart" class="w-full"></canvas>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 text-center">Data Timbulan Sampah</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full border border-gray-300 rounded-lg">
+                <thead>
+                    <tr class="bg-green-500 text-white">
+                    <th class="border px-4 py-2 text-left">Tahun</th>
+                    <th class="border px-4 py-2 text-left">Provinsi</th>
+                    <th class="border px-4 py-2 text-left">Kabupaten/Kota</th>
+                    <th class="border px-4 py-2 text-left">Timbulan Harian (Ton)</th>
+                    <th class="border px-4 py-2 text-left">Timbulan Tahunan (Ton)</th>
+                    </tr>
+                </thead>
+                <tbody id="" class="bg-white">
+                    {% for item in data %}
+                    <tr class="hover:bg-green-200 transition">
+                    <td class="border px-4 py-2">{{ item.tahun }}</td>
+                    <td class="border px-4 py-2">{{ item.nama_propinsi }}</td>
+                    <td class="border px-4 py-2">{{ item.nama_dati2 }}</td>
+                    <td class="border px-4 py-2">{{ item.timbulan_harian }}</td>
+                    <td class="border px-4 py-2">{{ item.timbulan_tahunan }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
             </div>
         </div>
     </section>
@@ -122,6 +159,65 @@
             menu.classList.toggle('hidden');
         });
     </script>
+
+    <script>
+        // Fetch data dari file JSON
+        fetch('data.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                let tableBody = document.getElementById("table-body");
+
+                jsonData.data.forEach((item, index) => {
+                    let row = `
+                        <tr class="${index % 2 === 0 ? 'bg-gray-100' : 'bg-gray-50'} hover:bg-green-200 transition">
+                            <td class="border px-4 py-2">${item.tahun}</td>
+                            <td class="border px-4 py-2">${item.nama_propinsi}</td>
+                            <td class="border px-4 py-2">${item.nama_dati2}</td>
+                            <td class="border px-4 py-2">${item.timbulan_harian}</td>
+                            <td class="border px-4 py-2">${item.timbulan_tahunan}</td>
+                        </tr>
+                    `;
+                    tableBody.innerHTML += row;
+                });
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+
+    <script>
+        // Ambil data dari Flask (sudah dalam format JSON)
+        const chartData = JSON.parse('{{ chart_data | tojson | safe }}');
+
+        // Konfigurasi Chart.js
+        const ctx = document.getElementById('myChart').getContext('2d');
+        new Chart(ctx, {
+            type: chartData.type,
+            data: {
+                labels: chartData.labels,
+                datasets: chartData.datasets.map(dataset => ({
+                    label: dataset.label,
+                    data: dataset.data.map(value => parseFloat(value)), // Konversi string ke angka
+                    backgroundColor: dataset.backgroundColor,
+                    borderColor: dataset.borderColor,
+                    borderWidth: dataset.borderWidth,
+                    fill: dataset.fill,
+                    yAxisID: dataset.yAxisID
+                }))
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: chartData.yAxes[0].scaleLabel.labelString
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

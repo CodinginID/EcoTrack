@@ -1,0 +1,37 @@
+{
+    "type": "bar",
+    "title": "TIMBULAN SAMPAH",
+    "labels": ["2019", "2020", "2021", "2022", "2023", "2024"],
+    "display_label_value": false,
+    "datasets": [
+      {
+        "data": [
+          "5413713.468490000",
+          "3847380.622210000",
+          "4068911.992300000",
+          "5616863.284108600",
+          "6117220.183497500",
+          "1521937.605550000"
+        ],
+        "backgroundColor": "rgba(77,94,118,1)",
+        "borderColor": "rgba(77,94,118,1)",
+        "borderWidth": 1,
+        "label": "Timbulan Kabupaten/Kota",
+        "fill": false,
+        "yAxisID": "y1"
+      }
+    ],
+    "yAxes": [
+      {
+        "id": "y1",
+        "scaleLabel": {
+          "display": true,
+          "labelString": "Ton"
+        },
+        "ticks": {
+          "beginAtZero": true
+        }
+      }
+    ]
+  }
+  

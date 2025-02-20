@@ -1,0 +1,1145 @@
+{
+    "draw": "4",
+    "recordsTotal": 1583,
+    "recordsFiltered": 161,
+    "data": [
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tulungagung",
+            "timbulan_harian": "450.40",
+            "timbulan_tahunan": "164,395.27"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jember",
+            "timbulan_harian": "835.52",
+            "timbulan_tahunan": "304,964.95"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bondowoso",
+            "timbulan_harian": "315.20",
+            "timbulan_tahunan": "115,049.02"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Mojokerto",
+            "timbulan_harian": "449.64",
+            "timbulan_tahunan": "164,117.17"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jombang",
+            "timbulan_harian": "530.37",
+            "timbulan_tahunan": "193,583.44"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "457.80",
+            "timbulan_tahunan": "167,098.17"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Madiun",
+            "timbulan_harian": "295.69",
+            "timbulan_tahunan": "107,927.58"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lamongan",
+            "timbulan_harian": "554.33",
+            "timbulan_tahunan": "202,331.91"
+        },
+        {
+            "tahun": "2024",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "280.74",
+            "timbulan_tahunan": "102,470.10"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pacitan",
+            "timbulan_harian": "288.62",
+            "timbulan_tahunan": "105,345.64"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ponorogo",
+            "timbulan_harian": "385.70",
+            "timbulan_tahunan": "140,780.94"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Trenggalek",
+            "timbulan_harian": "300.43",
+            "timbulan_tahunan": "109,657.53"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tulungagung",
+            "timbulan_harian": "558.98",
+            "timbulan_tahunan": "204,028.80"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Blitar",
+            "timbulan_harian": "413.67",
+            "timbulan_tahunan": "150,990.10"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Kediri",
+            "timbulan_harian": "662.41",
+            "timbulan_tahunan": "241,778.92"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Malang",
+            "timbulan_harian": "966.92",
+            "timbulan_tahunan": "352,927.26"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lumajang",
+            "timbulan_harian": "535.00",
+            "timbulan_tahunan": "195,275.12"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jember",
+            "timbulan_harian": "1,033.69",
+            "timbulan_tahunan": "377,298.02"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Banyuwangi",
+            "timbulan_harian": "836.47",
+            "timbulan_tahunan": "305,312.85"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Situbondo",
+            "timbulan_harian": "252.41",
+            "timbulan_tahunan": "92,130.84"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Probolinggo",
+            "timbulan_harian": "463.99",
+            "timbulan_tahunan": "169,354.89"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sidoarjo",
+            "timbulan_harian": "878.60",
+            "timbulan_tahunan": "320,690.10"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Mojokerto",
+            "timbulan_harian": "473.93",
+            "timbulan_tahunan": "172,984.00"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jombang",
+            "timbulan_harian": "530.37",
+            "timbulan_tahunan": "193,583.44"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "446.81",
+            "timbulan_tahunan": "163,086.82"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Madiun",
+            "timbulan_harian": "299.04",
+            "timbulan_tahunan": "109,147.99"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Magetan",
+            "timbulan_harian": "275.96",
+            "timbulan_tahunan": "100,725.11"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ngawi",
+            "timbulan_harian": "370.68",
+            "timbulan_tahunan": "135,297.67"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bojonegoro",
+            "timbulan_harian": "366.14",
+            "timbulan_tahunan": "133,639.42"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tuban",
+            "timbulan_harian": "508.01",
+            "timbulan_tahunan": "185,422.94"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lamongan",
+            "timbulan_harian": "552.57",
+            "timbulan_tahunan": "201,686.44"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Gresik",
+            "timbulan_harian": "395.17",
+            "timbulan_tahunan": "144,238.33"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bangkalan",
+            "timbulan_harian": "417.15",
+            "timbulan_tahunan": "152,259.02"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sampang",
+            "timbulan_harian": "464.41",
+            "timbulan_tahunan": "169,511.29"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "277.14",
+            "timbulan_tahunan": "101,156.10"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sumenep",
+            "timbulan_harian": "367.44",
+            "timbulan_tahunan": "134,116.66"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Kediri",
+            "timbulan_harian": "173.87",
+            "timbulan_tahunan": "63,461.92"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Blitar",
+            "timbulan_harian": "76.68",
+            "timbulan_tahunan": "27,988.20"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Malang",
+            "timbulan_harian": "778.34",
+            "timbulan_tahunan": "284,095.41"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Probolinggo",
+            "timbulan_harian": "97.82",
+            "timbulan_tahunan": "35,705.61"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Pasuruan",
+            "timbulan_harian": "147.48",
+            "timbulan_tahunan": "53,830.17"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Mojokerto",
+            "timbulan_harian": "98.31",
+            "timbulan_tahunan": "35,882.93"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Madiun",
+            "timbulan_harian": "122.60",
+            "timbulan_tahunan": "44,750.39"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Surabaya",
+            "timbulan_harian": "1,800.05",
+            "timbulan_tahunan": "657,016.64"
+        },
+        {
+            "tahun": "2023",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Batu",
+            "timbulan_harian": "142.64",
+            "timbulan_tahunan": "52,062.68"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pacitan",
+            "timbulan_harian": "287.67",
+            "timbulan_tahunan": "104,999.96"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ponorogo",
+            "timbulan_harian": "382.34",
+            "timbulan_tahunan": "139,552.64"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Trenggalek",
+            "timbulan_harian": "305.48",
+            "timbulan_tahunan": "111,498.74"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tulungagung",
+            "timbulan_harian": "553.83",
+            "timbulan_tahunan": "202,148.86"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Blitar",
+            "timbulan_harian": "409.06",
+            "timbulan_tahunan": "149,305.60"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Kediri",
+            "timbulan_harian": "657.76",
+            "timbulan_tahunan": "240,082.40"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Malang",
+            "timbulan_harian": "960.59",
+            "timbulan_tahunan": "350,614.09"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lumajang",
+            "timbulan_harian": "524.51",
+            "timbulan_tahunan": "191,446.12"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jember",
+            "timbulan_harian": "1,014.69",
+            "timbulan_tahunan": "370,362.43"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Banyuwangi",
+            "timbulan_harian": "813.91",
+            "timbulan_tahunan": "297,078.45"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Situbondo",
+            "timbulan_harian": "257.24",
+            "timbulan_tahunan": "93,891.73"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Probolinggo",
+            "timbulan_harian": "462.36",
+            "timbulan_tahunan": "168,760.52"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Mojokerto",
+            "timbulan_harian": "461.16",
+            "timbulan_tahunan": "168,322.61"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jombang",
+            "timbulan_harian": "530.37",
+            "timbulan_tahunan": "193,583.44"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "444.13",
+            "timbulan_tahunan": "162,107.74"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Madiun",
+            "timbulan_harian": "300.06",
+            "timbulan_tahunan": "109,520.88"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Magetan",
+            "timbulan_harian": "275.75",
+            "timbulan_tahunan": "100,647.87"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ngawi",
+            "timbulan_harian": "358.07",
+            "timbulan_tahunan": "130,696.23"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bojonegoro",
+            "timbulan_harian": "376.09",
+            "timbulan_tahunan": "137,271.36"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tuban",
+            "timbulan_harian": "505.31",
+            "timbulan_tahunan": "184,439.37"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lamongan",
+            "timbulan_harian": "228.06",
+            "timbulan_tahunan": "83,240.85"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Gresik",
+            "timbulan_harian": "391.33",
+            "timbulan_tahunan": "142,835.43"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bangkalan",
+            "timbulan_harian": "415.72",
+            "timbulan_tahunan": "151,736.05"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sampang",
+            "timbulan_harian": "464.41",
+            "timbulan_tahunan": "169,511.29"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "277.10",
+            "timbulan_tahunan": "101,140.55"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sumenep",
+            "timbulan_harian": "362.19",
+            "timbulan_tahunan": "132,197.86"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Kediri",
+            "timbulan_harian": "178.59",
+            "timbulan_tahunan": "65,183.70"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Blitar",
+            "timbulan_harian": "75.98",
+            "timbulan_tahunan": "27,732.70"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Malang",
+            "timbulan_harian": "764.79",
+            "timbulan_tahunan": "279,148.37"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Probolinggo",
+            "timbulan_harian": "97.16",
+            "timbulan_tahunan": "35,465.15"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Pasuruan",
+            "timbulan_harian": "146.02",
+            "timbulan_tahunan": "53,297.25"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Mojokerto",
+            "timbulan_harian": "66.91",
+            "timbulan_tahunan": "24,420.33"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Madiun",
+            "timbulan_harian": "121.15",
+            "timbulan_tahunan": "44,219.80"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Surabaya",
+            "timbulan_harian": "1,783.68",
+            "timbulan_tahunan": "651,043.42"
+        },
+        {
+            "tahun": "2022",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Batu",
+            "timbulan_harian": "135.23",
+            "timbulan_tahunan": "49,359.46"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pacitan",
+            "timbulan_harian": "286.73",
+            "timbulan_tahunan": "104,654.83"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ponorogo",
+            "timbulan_harian": "387.78",
+            "timbulan_tahunan": "141,540.58"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Trenggalek",
+            "timbulan_harian": "293.96",
+            "timbulan_tahunan": "107,293.65"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tulungagung",
+            "timbulan_harian": "548.30",
+            "timbulan_tahunan": "200,127.68"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Blitar",
+            "timbulan_harian": "409.93",
+            "timbulan_tahunan": "149,623.83"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Kediri",
+            "timbulan_harian": "533.82",
+            "timbulan_tahunan": "194,845.76"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lumajang",
+            "timbulan_harian": "501.50",
+            "timbulan_tahunan": "183,048.96"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Banyuwangi",
+            "timbulan_harian": "1,252.87",
+            "timbulan_tahunan": "457,297.22"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Situbondo",
+            "timbulan_harian": "257.17",
+            "timbulan_tahunan": "93,865.59"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jombang",
+            "timbulan_harian": "530.37",
+            "timbulan_tahunan": "193,583.44"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "443.87",
+            "timbulan_tahunan": "162,013.72"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Magetan",
+            "timbulan_harian": "268.32",
+            "timbulan_tahunan": "97,938.55"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ngawi",
+            "timbulan_harian": "356.72",
+            "timbulan_tahunan": "130,204.03"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bojonegoro",
+            "timbulan_harian": "536.50",
+            "timbulan_tahunan": "195,823.81"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tuban",
+            "timbulan_harian": "503.17",
+            "timbulan_tahunan": "183,655.24"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lamongan",
+            "timbulan_harian": "221.94",
+            "timbulan_tahunan": "81,008.10"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "276.60",
+            "timbulan_tahunan": "100,957.25"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sumenep",
+            "timbulan_harian": "367.44",
+            "timbulan_tahunan": "134,116.61"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Kediri",
+            "timbulan_harian": "169.35",
+            "timbulan_tahunan": "61,812.13"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Blitar",
+            "timbulan_harian": "75.19",
+            "timbulan_tahunan": "27,442.53"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Malang",
+            "timbulan_harian": "677.78",
+            "timbulan_tahunan": "247,388.97"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Probolinggo",
+            "timbulan_harian": "96.57",
+            "timbulan_tahunan": "35,247.76"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Pasuruan",
+            "timbulan_harian": "135.20",
+            "timbulan_tahunan": "49,349.42"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Madiun",
+            "timbulan_harian": "119.71",
+            "timbulan_tahunan": "43,695.25"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Surabaya",
+            "timbulan_harian": "1,782.51",
+            "timbulan_tahunan": "650,614.62"
+        },
+        {
+            "tahun": "2021",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Batu",
+            "timbulan_harian": "114.42",
+            "timbulan_tahunan": "41,762.47"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pacitan",
+            "timbulan_harian": "285.78",
+            "timbulan_tahunan": "104,308.04"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ponorogo",
+            "timbulan_harian": "349.13",
+            "timbulan_tahunan": "127,432.45"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Trenggalek",
+            "timbulan_harian": "300.10",
+            "timbulan_tahunan": "109,536.65"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Blitar",
+            "timbulan_harian": "422.57",
+            "timbulan_tahunan": "154,237.67"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lumajang",
+            "timbulan_harian": "501.46",
+            "timbulan_tahunan": "183,033.37"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bondowoso",
+            "timbulan_harian": "287.18",
+            "timbulan_tahunan": "104,819.19"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Situbondo",
+            "timbulan_harian": "259.36",
+            "timbulan_tahunan": "94,665.76"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Probolinggo",
+            "timbulan_harian": "458.45",
+            "timbulan_tahunan": "167,335.13"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sidoarjo",
+            "timbulan_harian": "1,086.24",
+            "timbulan_tahunan": "396,476.90"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Jombang",
+            "timbulan_harian": "527.22",
+            "timbulan_tahunan": "192,437.05"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "422.94",
+            "timbulan_tahunan": "154,373.54"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Magetan",
+            "timbulan_harian": "279.30",
+            "timbulan_tahunan": "101,944.50"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ngawi",
+            "timbulan_harian": "366.52",
+            "timbulan_tahunan": "133,778.92"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tuban",
+            "timbulan_harian": "493.13",
+            "timbulan_tahunan": "179,991.08"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Gresik",
+            "timbulan_harian": "327.80",
+            "timbulan_tahunan": "119,648.37"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "272.19",
+            "timbulan_tahunan": "99,350.12"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sumenep",
+            "timbulan_harian": "363.80",
+            "timbulan_tahunan": "132,788.73"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Kediri",
+            "timbulan_harian": "150.93",
+            "timbulan_tahunan": "55,091.09"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Blitar",
+            "timbulan_harian": "74.57",
+            "timbulan_tahunan": "27,219.69"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Malang",
+            "timbulan_harian": "677.78",
+            "timbulan_tahunan": "247,389.19"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Probolinggo",
+            "timbulan_harian": "95.75",
+            "timbulan_tahunan": "34,949.48"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Pasuruan",
+            "timbulan_harian": "132.59",
+            "timbulan_tahunan": "48,394.73"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Mojokerto",
+            "timbulan_harian": "65.18",
+            "timbulan_tahunan": "23,790.34"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Madiun",
+            "timbulan_harian": "118.17",
+            "timbulan_tahunan": "43,133.55"
+        },
+        {
+            "tahun": "2020",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Surabaya",
+            "timbulan_harian": "2,222.62",
+            "timbulan_tahunan": "811,255.10"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pacitan",
+            "timbulan_harian": "284.83",
+            "timbulan_tahunan": "103,962.36"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Trenggalek",
+            "timbulan_harian": "307.01",
+            "timbulan_tahunan": "112,059.38"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tulungagung",
+            "timbulan_harian": "519.51",
+            "timbulan_tahunan": "189,621.88"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Blitar",
+            "timbulan_harian": "415.61",
+            "timbulan_tahunan": "151,697.14"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Kediri",
+            "timbulan_harian": "505.94",
+            "timbulan_tahunan": "184,669.09"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Malang",
+            "timbulan_harian": "1,042.48",
+            "timbulan_tahunan": "380,505.78"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Lumajang",
+            "timbulan_harian": "500.35",
+            "timbulan_tahunan": "182,629.01"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Banyuwangi",
+            "timbulan_harian": "1,221.97",
+            "timbulan_tahunan": "446,019.96"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bondowoso",
+            "timbulan_harian": "285.75",
+            "timbulan_tahunan": "104,298.71"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Situbondo",
+            "timbulan_harian": "256.12",
+            "timbulan_tahunan": "93,482.61"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Probolinggo",
+            "timbulan_harian": "466.12",
+            "timbulan_tahunan": "170,133.51"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pasuruan",
+            "timbulan_harian": "1,152.06",
+            "timbulan_tahunan": "420,500.88"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sidoarjo",
+            "timbulan_harian": "1,223.93",
+            "timbulan_tahunan": "446,733.65"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Nganjuk",
+            "timbulan_harian": "421.84",
+            "timbulan_tahunan": "153,973.21"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Madiun",
+            "timbulan_harian": "273.07",
+            "timbulan_tahunan": "99,671.28"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Ngawi",
+            "timbulan_harian": "365.42",
+            "timbulan_tahunan": "133,378.74"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Bojonegoro",
+            "timbulan_harian": "508.74",
+            "timbulan_tahunan": "185,688.35"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Tuban",
+            "timbulan_harian": "490.92",
+            "timbulan_tahunan": "179,184.71"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Gresik",
+            "timbulan_harian": "324.55",
+            "timbulan_tahunan": "118,459.29"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Pamekasan",
+            "timbulan_harian": "269.33",
+            "timbulan_tahunan": "98,305.05"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kab. Sumenep",
+            "timbulan_harian": "360.20",
+            "timbulan_tahunan": "131,473.99"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Kediri",
+            "timbulan_harian": "147.48",
+            "timbulan_tahunan": "53,828.38"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Blitar",
+            "timbulan_harian": "70.94",
+            "timbulan_tahunan": "25,892.37"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Malang",
+            "timbulan_harian": "670.47",
+            "timbulan_tahunan": "244,720.24"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Probolinggo",
+            "timbulan_harian": "94.08",
+            "timbulan_tahunan": "34,340.81"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Pasuruan",
+            "timbulan_harian": "131.28",
+            "timbulan_tahunan": "47,915.72"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Mojokerto",
+            "timbulan_harian": "64.73",
+            "timbulan_tahunan": "23,627.73"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Madiun",
+            "timbulan_harian": "116.77",
+            "timbulan_tahunan": "42,622.24"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Surabaya",
+            "timbulan_harian": "2,224.27",
+            "timbulan_tahunan": "811,860.24"
+        },
+        {
+            "tahun": "2019",
+            "nama_propinsi": "Jawa Timur",
+            "nama_dati2": "Kota Batu",
+            "timbulan_harian": "116.32",
+            "timbulan_tahunan": "42,457.19"
+        }
+    ],
+    "total": [
+        {
+            "tahun": null,
+            "nama_propinsi": null,
+            "nama_dati2": null,
+            "total_1": "72,838.43",
+            "total_2": "26,586,027.16",
+            "total_3": "5,726.41",
+            "total_4": "2,090,139.55"
+        }
+    ]
+}

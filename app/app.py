@@ -4,6 +4,7 @@ from firebase_admin import credentials, auth, firestore
 import requests
 import os
 import logging
+import json
 
 
 # Setup logging
@@ -32,7 +33,14 @@ def home():
 
 @app.route('/jejak-angka')
 def jejak_angka():
-    return render_template("jejak_angka.html")
+
+    with open("static/data_chart.json") as f:
+        chart_data = json.load(f)
+
+
+    with open("static/data.json") as f:
+        data = json.load(f)  # Load data dari file JSON
+    return render_template("jejak_angka.html", data=data["data"], chart_data=chart_data)
 
 @app.route('/form-question')
 def form_question():
@@ -169,7 +177,6 @@ def verify_google_token(id_token):
     except Exception as e:
         return None
     
-
 @app.route("/get_data", methods=["POST"])
 def get_data():
     try:
