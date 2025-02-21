@@ -33,16 +33,16 @@
                 <!-- Menu -->
                 <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
                     <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
-                    <a href="{{url_for('form_question')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Question</a>
                     <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
+                    <a href="{{url_for('form_quest')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Quest</a>
                 </div>
             </div>
         </div>
         <div id="mobile-menu" class="hidden bg-emerald-700">
             <div id="mobile-menu" class="hidden lg:hidden"></div>
             <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
-            <a href="{{url_for('form_question')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Question</a>
             <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
+            <a href="{{url_for('form_quest')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Quest</a>
             </div>
         </div>
     </nav>
@@ -124,52 +124,43 @@
     <!-- Fitur -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <a href="{{url_for('jejak_angka')}}" class="block no-underline">
-                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
-                        <img src="{{url_for('static', filename='images/Jejak_Angka.png')}}" alt="Jejak Angka" class="w-16 h-16 rounded-full">
-                        <div class="ml-4">
-                            <h3 class="text-xl font-bold mb-2">Jejak Angka</h3>
-                            <p class="text-gray-600 text-sm">LLihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="{{url_for('form_question')}}" class="block no-underline">
-                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
-                        <img src="{{url_for('static', filename='images/Form_Quest.png')}}" alt="Form Quest" class="w-16 h-16 rounded-full">
-                        <div class="ml-4">
-                            <h3 class="text-xl font-bold mb-2">Form Question</h3>
-                            <p class="text-gray-600">Pelajari tentang proses daur ulang dan jenis sampah yang dapat didaur
-                            ulang.</p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="{{url_for('lokal_sampah')}}" class="block no-underline">
-                    <div class="flex items-center p-4 border rounded-lg shadow-md max-w-md transition duration-300 hover:bg-green-400">
-                        <img src="{{url_for('static', filename='images/Lokal_Sampah.png')}}" alt="Lokal Sampah" class="w-16 h-16 rounded-full">
-                        <div class="ml-4">
-                            <h3 class="text-xl font-bold mb-2">Lokal Sampah</h3>
-                            <p class="text-gray-600">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
-                        </div>
-                    </div>
-                </a>
-                
-
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-5xl">
+                <!-- Jejak Angka Artikel -->
+                <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                    <img src="{{url_for('static', filename='images/Jejak_Angka.png')}}" alt="Jejang angka" class="mx-auto mb-4">
+                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-orange-500">Jejak Angka</span></h2>
+                    <p class="text-gray-600 text-sm my-2">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
+                    <a href="{{url_for('jejak_angka')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
+                </div>
+        
+                <!-- Lokal Sampah C.A.S.H -->
+                <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                    <img src="{{url_for('static', filename='images/Lokal_Sampah.png')}}" alt="C.A.S.H" class="mx-auto mb-4">
+                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-pink-500">Lokal Sampah</span></h2>
+                    <p class="text-gray-600 text-sm my-2">Organisir dan kelola keuangan bersama dengan program C.A.S.H dari kami!</p>
+                    <a href="{{url_for('lokal_sampah')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
+                </div>
+        
+                <!-- Card Form -->
+                <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                    <img src="{{url_for('static', filename='images/Form_Quest.png')}}" alt="Form" class="mx-auto mb-4">
+                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-green-500">Form Quest</span></h2>
+                    <p class="text-gray-600 text-sm my-2">Tingkatkan kesadaran melalui formulir dan dokumentasi yang kami bagikan!</p>
+                    <a href="{{url_for('form_quest')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Background and Objectives Section -->
     <section class="py-16 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4">
+        <!-- <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-blue-500 mb-8">Latar Belakang dan Tujuan Program Angkasa</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div>
                     <h3 class="text-2xl font-semibold text-gray-800 mb-4">Latar Belakang</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Program Angkasa hadir sebagai solusi untuk mengatasi permasalahan sampah yang semakin kompleks di era modern ini. Dengan meningkatnya jumlah penduduk dan aktivitas manusia, volume sampah yang dihasilkan juga semakin besar. Pengelolaan sampah yang tidak efektif dapat menyebabkan berbagai masalah lingkungan seperti pencemaran tanah, air, dan udara.
+                        
                     </p>
                 </div>
                 <div>
@@ -182,6 +173,45 @@
                     </ul>
                 </div>
             </div>
+        </div> -->
+        <div class="container mx-auto p-8">    
+            <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-semibold">Tujuan ANGKASA</h2>
+                    <button id="toggleTujuan" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300" 
+                             id="iconTujuan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="kontenTujuan" class="mt-4 transition duration-300">
+                    <p>
+                        Program Angkasa hadir sebagai solusi untuk mengatasi permasalahan sampah yang semakin kompleks di era modern ini. Dengan meningkatnya jumlah penduduk dan aktivitas manusia, volume sampah yang dihasilkan juga semakin besar. Pengelolaan sampah yang tidak efektif dapat menyebabkan berbagai masalah lingkungan seperti pencemaran tanah, air, dan udara.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <div class="flex justify-between items-center">
+                    <h2 class="text-xl font-semibold">Latar Belakang ANGKASA</h2>
+                    <button id="toggleLatarBelakang" class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300"
+                             id="iconLatarBelakang" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="kontenLatarBelakang" class="mt-4 transition duration-300">
+                    <ul class="list-disc list-inside text-gray-600 leading-relaxed">
+                        <li>Meningkatkan kesadaran masyarakat tentang pentingnya pengelolaan sampah yang baik dan benar.</li>
+                        <li>Mengurangi volume sampah yang dibuang ke tempat pembuangan akhir melalui program daur ulang dan pengomposan.</li>
+                        <li>Mengembangkan teknologi dan inovasi dalam pengelolaan sampah untuk menciptakan lingkungan yang lebih bersih dan berkelanjutan.</li>
+                        <li>Mendorong partisipasi aktif masyarakat dalam program pengelolaan sampah melalui edukasi dan kampanye.</li>
+                    </ul>
+                </div>
+            </div>
+    
         </div>
     </section>
 
@@ -270,6 +300,26 @@
         document.getElementById('menu-toggle').addEventListener('click', function () {
             var menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        const tujuanButton = document.getElementById('toggleTujuan');
+        const tujuanKonten = document.getElementById('kontenTujuan');
+        const tujuanIcon = document.getElementById('iconTujuan');
+
+        tujuanButton.addEventListener('click', () => {
+            tujuanKonten.classList.toggle('hidden');
+            tujuanIcon.classList.toggle('rotate-180');
+        });
+
+        const latarBelakangButton = document.getElementById('toggleLatarBelakang');
+        const latarBelakangKonten = document.getElementById('kontenLatarBelakang');
+        const latarBelakangIcon = document.getElementById('iconLatarBelakang');
+
+        latarBelakangButton.addEventListener('click', () => {
+            latarBelakangKonten.classList.toggle('hidden');
+            latarBelakangIcon.classList.toggle('rotate-180');
         });
     </script>
 

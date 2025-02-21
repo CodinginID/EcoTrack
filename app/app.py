@@ -43,7 +43,7 @@ def jejak_angka():
     return render_template("jejak_angka.html", data=data["data"], chart_data=chart_data)
 
 @app.route('/form-question')
-def form_question():
+def form_quest():
     return render_template("form_question.html")
 
 @app.route('/lokal-sampah')
