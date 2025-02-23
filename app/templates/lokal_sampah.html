@@ -31,7 +31,7 @@
                     </button>
                 </div>
                 <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
-                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
+                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejak Angka</a>
                     <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
                     <a href="{{url_for('form_quest')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Quest</a>
                 </div>
@@ -40,7 +40,7 @@
         </div>
         <div id="mobile-menu" class="hidden bg-emerald-700">
             <div id="mobile-menu" class="hidden lg:hidden"></div>
-                <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
+                <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejak Angka</a>
                 <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
                 <a href="{{url_for('form_quest')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Quest</a>
             </div>
@@ -48,37 +48,43 @@
     </nav>
     <section class="bg-white py-16">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Pengolahan Sampah</h2>
+            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Lokal Sampah</h2>
             <div class="space-y-8">
                 <article class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Pengertian Pengolahan Sampah</h3>
-                    <p class="text-gray-700">Pengolahan sampah adalah proses pengelolaan sampah dari pengumpulan, pengangkutan, pemrosesan, hingga pembuangan akhir. Tujuannya adalah untuk mengurangi dampak negatif sampah terhadap lingkungan dan kesehatan manusia.</p>
+                    <!-- <h3 class="text-2xl font-semibold mb-4">Pengertian Pengolahan Sampah</h3> -->
+                    <p class="text-gray-700">
+                        Lokal Sampah adalah fitur utama dari website ini! Apa itu lokal sampah?? Lokal Sampah itu seperti artikel sederhana yang menjelaskan dalam sistem kelola sampah. Daripada kita membuang sampah sembarangan, yang akhirnya malah merusak lingkungan disekitar kita. Apalagi mereka juga merugikan banget untuk makhluk-makhluk hidup. Yuk simak materi dibawah ini! 💯💪
+                    </p>
                 </article>
                 <article class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Metode Pengolahan Sampah</h3>
-                    <p class="text-gray-700">Ada beberapa metode pengolahan sampah yang umum digunakan, antara lain:</p>
+                    <h3 class="text-2xl font-semibold mb-4">Kelola Sampahmu Dengan Bijak</h3>
+                    <img src="{{url_for('static', filename='images/tumpukan_sampah.png')}}" alt="Metode Pengolahan Sampah" class="w-full h-auto mt-4 mb-4">
+                    <p class="text-gray-700">Itu adalah salah satu contoh dimana lingkungan telah dicemari oleh sampah. Nah sampah mencemari lingkungan ketika sampah yang dibuang sembarangan, tidak dikelola dengan baik, atau tidak terurai dengan cepat mengganggu ekosistem alam dan merusak kualitas lingkungan. Sampah bisa mencemari tanah, air, dan udara, yang berdampak buruk bagi kesehatan manusia, hewan, dan tumbuhan.</p>
+                    <p>Kemudian contoh-contoh pencemaran lingkungan akibat sampah meliputi:</p>
                     <ul class="list-disc list-inside text-gray-700">
-                        <li>Pengomposan: Proses penguraian bahan organik oleh mikroorganisme menjadi kompos yang dapat digunakan sebagai pupuk.</li>
-                        <li>Recycling: Proses mengubah sampah menjadi bahan baru yang dapat digunakan kembali.</li>
+                        <li>Pencemaran Tanah: Sampah yang dibuang sembarangan, seperti plastik dan limbah elektronik, dapat merusak kesuburan tanah dan menghambat pertumbuhan tanaman.</li>
+                        <li>Pencemaran Air: Sampah yang dibuang ke sungai, danau, atau laut bisa mencemari sumber air dan mengancam kehidupan organisme air. Sampah plastik yang mengapung di laut, misalnya, dapat menyebabkan kematian bagi ikan dan satwa laut lainnya.</li>
                         <li>Insinerasi: Pembakaran sampah pada suhu tinggi untuk mengurangi volume dan menghasilkan energi.</li>
-                        <li>Sanitary Landfill: Penimbunan sampah di lokasi yang telah dirancang khusus untuk mencegah pencemaran lingkungan.</li>
+                        <li>Pencemaran Udara: Pembakaran sampah yang tidak terkelola dengan baik melepaskan asap dan gas berbahaya, yang mencemari udara dan dapat mempengaruhi kesehatan manusia serta memperburuk pemanasan global.</li>
                     </ul>
                 </article>
                 <article class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Manfaat Pengolahan Sampah</h3>
-                    <p class="text-gray-700">Pengolahan sampah yang baik dapat memberikan berbagai manfaat, seperti:</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                    <h3 class="text-2xl font-semibold mb-4">Bagaimana cara mengatasi pencemaran lingkungan akibat sampah? Terutama bagi masyarakat yang masih senang membuang sampah sembarangan.</h3>
+                    <p class="text-gray-700">Kenalin apa itu Bank Sampah!</p>
+                    <p>Dengan program kami, kami memiliki program mengenai bank sampah. Bank sampah adalah sebuah sistem atau lembaga yang mengelola sampah dengan cara mengumpulkan, memilah, dan mendaur ulang sampah yang memiliki nilai ekonomi. Di bank sampah, masyarakat bisa menyetorkan sampah-sampah yang sudah dipilah (seperti plastik, kertas, logam, atau kaca) untuk ditukar dengan sejumlah uang atau manfaat lain, seperti poin atau barang.
+                    Tukarkan sampah-sampahmu untuk mendapatkan sesuatu yang bernilai. Daripada membuang sampah ke selokan yang nantinya akan merugikan bagi lingkungan. Mari memanfaatkan bank sampah, dan tukarkan sampah-sampahmu!</p>
+                    <!-- <ul class="list-disc list-inside text-gray-700">
                         <li>Mengurangi pencemaran lingkungan.</li>
                         <li>Menghemat sumber daya alam.</li>
                         <li>Mengurangi emisi gas rumah kaca.</li>
                         <li>Menciptakan lapangan kerja baru.</li>
-                    </ul>
+                    </ul> -->
                 </article>
             </div>
         </div>
     </section>
 
-    <section class="py-16">
+    <!-- <section class="py-16">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-white text-center mb-8">Tindak Lanjut</h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
@@ -99,8 +105,6 @@
                                     width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
                                     Memuat...
                                 </iframe>
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15827.914558879138!2d112.787109!3d-7.3562904499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e547f386b395%3A0x9777fbfbceb69558!2sTambakrejo%2C%20Waru%2C%20Sidoarjo%20Regency%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1740073761110!5m2!1sen!2sid" 
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> -->
                             </iframe>
                             </div>
                         </div>
@@ -108,7 +112,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
     <!-- More Info Section -->
     <section class="bg-gray-100 py-16">
         <div class="max-w-7xl mx-auto px-4 text-center">

@@ -32,7 +32,7 @@
                 </div>
                 <!-- Menu -->
                 <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
-                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
+                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejak Angka</a>
                     <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
                     <a href="{{url_for('form_quest')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Quest</a>
                 </div>
@@ -40,7 +40,7 @@
         </div>
         <div id="mobile-menu" class="hidden bg-emerald-700">
             <div id="mobile-menu" class="hidden lg:hidden"></div>
-            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
+            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejak Angka</a>
             <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
             <a href="{{url_for('form_quest')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Quest</a>
             </div>
@@ -50,8 +50,9 @@
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-20">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold mb-6">Kelola Sampah Lebih Bijak</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk lingkungan yang lebih bersih dan berkelanjutan</p>
+            <img src="{{url_for('static', filename='images/header.png')}}" alt="Hero Image" class="w-full h-auto mb-6">
+            <!-- <h1 class="text-5xl font-bold mb-6">Kelola Sampah Lebih Bijak</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Transformasi pengelolaan sampah dengan teknologi modern untuk lingkungan yang lebih bersih dan berkelanjutan</p> -->
         </div>
     </section>
 
@@ -60,6 +61,22 @@
     <!-- slider  -->
     <section class="py-16" id="about">
         <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-4 border-purple-500 max-w-4xl flex">
+                <!-- Gambar -->
+                <div class="w-1/2">
+                    <img src="{{url_for('static', filename='images/ANGKASA.png')}}" alt="ANGKASA" class="w-full h-auto object-cover rounded-xl">
+                </div>
+        
+                <!-- Konten -->
+                <div class="w-1/2 pl-6 flex flex-col justify-center">
+                    <h2 class="text-2xl font-bold text-gray-800">ANGKASA</h2>
+                    <p class="text-gray-600 mt-2">
+                        Aksi Nyata Giat Kelola Sampah (ANGKASA), adalah sebuah program menarik dalam mengatur pengelolaan sampah kamu! Website ini memiliki banyak fitur seperti Jejak Angka, Lokal Sampah, dan juga Form Quest 🔍✏️. Mari kita semua bijak dalam mengelola sampah setiap harinya. 🚀‼️
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-white text-center mb-8"></h2>
             <div class="bg-white rounded-xl shadow-lg p-6">
                 <div class="flex flex-col md:flex-row gap-4">
@@ -68,7 +85,7 @@
                             <div class="glide__track" data-glide-el="track">
                                 <ul class="glide__slides">
                                     <li class="glide__slide">
-                                        <img src="{{url_for('static', filename='images/testing.jpg')}}" alt="Alam Hijau"
+                                        <img class="w-full h-auto object-cover" src="{{url_for('static', filename='images/ANGKASA.png')}}" alt="Alam Hijau"
                                             class="w-full h-80 object-cover rounded-lg shadow-md">
                                     </li>
                                     <li class="glide__slide">
@@ -95,10 +112,9 @@
                     </div>
                     <div class="w-full md:w-1/2">
                         <div class="slide-description">
-                            <h2 class="text-2xl font-semibold text-gray-800">Alam Hijau</h2>
+                            <h2 class="text-2xl font-semibold text-gray-800">ANGKASA</h2>
                             <p class="text-gray-600 mt-2 leading-relaxed">
-                                Keindahan alam yang harus kita jaga. Hutan hijau menyediakan oksigen, habitat, dan
-                                keseimbangan ekosistem.
+                                Aksi Nyata Giat Kelola Sampah (ANGKASA), adalah sebuah program menarik dalam mengatur pengelolaan sampah kamu! Website ini memiliki banyak fitur seperti Jejak Angka, Lokal Sampah, dan juga Form Quest💡🗝️. Mari kita semua bijak dalam mengelola sampah setiap harinya. 🚀‼️
                             </p>
                         </div>
                         <div class="slide-description hidden">
@@ -118,7 +134,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- slider  -->
     <!-- Fitur -->
@@ -127,25 +143,25 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-5xl">
                 <!-- Jejak Angka Artikel -->
                 <div class="bg-white shadow-lg rounded-xl p-6 text-center">
-                    <img src="{{url_for('static', filename='images/Jejak_Angka.png')}}" alt="Jejang angka" class="mx-auto mb-4">
-                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-orange-500">Jejak Angka</span></h2>
-                    <p class="text-gray-600 text-sm my-2">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p>
+                    <img src="{{url_for('static', filename='images/Jejak_Angka.png')}}" alt="Jejak angka" class="mx-auto mb-4">
+                    <h2 class="text-lg font-bold text-gray-700"><span class="text-orange-500">Jejak Angka</span></h2>
+                    <!-- <p class="text-gray-600 text-sm my-2">Lihat data statistik terkait volume dan jenis sampah di wilayah Anda.</p> -->
                     <a href="{{url_for('jejak_angka')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
                 </div>
         
                 <!-- Lokal Sampah C.A.S.H -->
                 <div class="bg-white shadow-lg rounded-xl p-6 text-center">
                     <img src="{{url_for('static', filename='images/Lokal_Sampah.png')}}" alt="C.A.S.H" class="mx-auto mb-4">
-                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-pink-500">Lokal Sampah</span></h2>
-                    <p class="text-gray-600 text-sm my-2">Organisir dan kelola keuangan bersama dengan program C.A.S.H dari kami!</p>
+                    <h2 class="text-lg font-bold text-gray-700"><span class="text-pink-500">Lokal Sampah</span></h2>
+                    <!-- <p class="text-gray-600 text-sm my-2">Organisir dan kelola keuangan bersama dengan program C.A.S.H dari kami!</p> -->
                     <a href="{{url_for('lokal_sampah')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
                 </div>
         
                 <!-- Card Form -->
                 <div class="bg-white shadow-lg rounded-xl p-6 text-center">
                     <img src="{{url_for('static', filename='images/Form_Quest.png')}}" alt="Form" class="mx-auto mb-4">
-                    <h2 class="text-lg font-bold text-gray-700">Angkasa <span class="text-green-500">Form Quest</span></h2>
-                    <p class="text-gray-600 text-sm my-2">Tingkatkan kesadaran melalui formulir dan dokumentasi yang kami bagikan!</p>
+                    <h2 class="text-lg font-bold text-gray-700"><span class="text-green-500">Form Quest</span></h2>
+                    <!-- <p class="text-gray-600 text-sm my-2">Tingkatkan kesadaran melalui formulir dan dokumentasi yang kami bagikan!</p> -->
                     <a href="{{url_for('form_quest')}}"><button class="mt-4 bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-green-400">Klik disini!</button></a>
                 </div>
             </div>
@@ -187,7 +203,7 @@
                 </div>
                 <div id="kontenTujuan" class="mt-4 transition duration-300">
                     <p>
-                        Program Angkasa hadir sebagai solusi untuk mengatasi permasalahan sampah yang semakin kompleks di era modern ini. Dengan meningkatnya jumlah penduduk dan aktivitas manusia, volume sampah yang dihasilkan juga semakin besar. Pengelolaan sampah yang tidak efektif dapat menyebabkan berbagai masalah lingkungan seperti pencemaran tanah, air, dan udara.
+                        Aksi Nyata Giat Kelola Sampah (ANGKASA) ini bertujuan untuk membantu dan mengedukasi masyarakat dalam mengelola sampah dengan bijak. Dengan adanya website akan melibatkan masyarakat dan pemerintah setempat untuk berpartisipasi dalam menanggulangi dampak negatif pencemaran sampah bagi lingkungan. Juga untuk meningkatkan kontribusi warga sekitar dalam menciptakan sistem pengelolaan sampah yang efektif dan efisien.
                     </p>
                 </div>
             </div>
@@ -203,12 +219,15 @@
                     </button>
                 </div>
                 <div id="kontenLatarBelakang" class="mt-4 transition duration-300">
-                    <ul class="list-disc list-inside text-gray-600 leading-relaxed">
+                    <p>
+                        Pengelolaan sampah sangat penting untuk menjaga kelestarian lingkungan dan kesehatan masyarakat. Sampah yang tidak dikelola dengan baik dapat menyebabkan pencemaran dan berkembangnya penyakit. Pengelolaan sampah bukan hanya tanggung jawab pemerintah, tetapi juga masyarakat. Jumlah sampah terus meningkat, sementara kapasitas pengelolaannya terbatas. Masalah seperti tingginya laju sampah dan kurangnya kepedulian masyarakat akan memperburuk situasi. Pengelolaan sampah yang efisien memerlukan partisipasi semua pihak, termasuk dalam tindakan sederhana seperti memilah sampah, mendaur ulang, dan mengurangi plastik sekali pakai. Edukasi mengenai pengelolaan sampah ramah lingkungan sangat diperlukan. Berdasarkan hal ini, kami, siswa Kelas VIII Abu Bakar ash Shiddiq SMP Al Muslim, akan melaksanakan kegiatan bertema “Aksi Nyata Giat Kelola Sampah” (ANGKASA) di Desa Tambakrejo, Waru, Sidoarjo.
+                    </p>
+                    <!-- <ul class="list-disc list-inside text-gray-600 leading-relaxed">
                         <li>Meningkatkan kesadaran masyarakat tentang pentingnya pengelolaan sampah yang baik dan benar.</li>
                         <li>Mengurangi volume sampah yang dibuang ke tempat pembuangan akhir melalui program daur ulang dan pengomposan.</li>
                         <li>Mengembangkan teknologi dan inovasi dalam pengelolaan sampah untuk menciptakan lingkungan yang lebih bersih dan berkelanjutan.</li>
                         <li>Mendorong partisipasi aktif masyarakat dalam program pengelolaan sampah melalui edukasi dan kampanye.</li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
     
@@ -230,7 +249,8 @@
                     <div class="w-full md:w-1/2">
                         <div class="bg-white rounded-xl shadow-lg p-6">
                             <h3 class="text-2xl font-bold mb-4">Lokasi Kami</h3>
-                            <p class="text-lg text-gray-600">SMP Al Muslim.</p>                    
+                            <b><p class="text-lg text-gray-600">Sekolah Menengah Pertama Al Muslim</p></b>
+                            <p>Jalan Raya Wadung Asri No. 39F, Waru Sidoarjo.</p>
                         </div>
                         <!-- <p class="text-lg text-gray-600">Kami berlokasi di Jalan Pondok Indah Raya, Pondok Indah, Kecamatan Kebayoran Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</p> -->
                     </div>

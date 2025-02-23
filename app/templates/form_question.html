@@ -31,7 +31,7 @@
                     </button>
                 </div>
                 <div id="nav-menu" class="hidden lg:flex space-x-4 ml-auto">
-                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejang Angka</a>
+                    <a href="{{url_for('jejak_angka')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Jejak Angka</a>
                     <a href="{{url_for('lokal_sampah')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Lokal Sampah</a>
                     <a href="{{url_for('form_quest')}}" class="text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 no-underline">Form Quest</a>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div id="mobile-menu" class="hidden bg-emerald-700">
             <div id="mobile-menu" class="hidden lg:hidden"></div>
-            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejang Angka</a>
+            <a href="{{url_for('jejak_angka')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Jejak Angka</a>
             <a href="{{url_for('lokal_sampah')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Lokal Sampah</a>
             <a href="{{url_for('form_quest')}}" class="block text-white text-lg px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-500 hover:bg-opacity-75 no-underline">Form Quest</a>
             </div>
@@ -48,16 +48,20 @@
     
     <section class="bg-gray-50 py-16" id="cont</section>rib</section>ute">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Ajukan Pertanyaan</h2>
+            <h2 class="text-3xl font-bold text-blue-500 text-center mb-8">Form Quest</h2>
             <p class="text-lg text-gray-700 mb-6"></p>
-                Kami sangat menghargai partisipasi Anda dalam membantu kami meningkatkan pengelolaan sampah. Jika Anda memiliki pertanyaan, saran, atau masukan mengenai cara kami mengelola sampah, silakan ajukan melalui formulir di bawah ini. Setiap pertanyaan dan saran Anda akan sangat berarti bagi kami dalam upaya menciptakan lingkungan yang lebih bersih dan sehat.
+                Ini adalah quest yang tepat untuk kamu! Disini adalah formulir-formulir untuk dikerjakan pada masing-masing individu. Bagaimana pemahaman kalian dalam mengenal sampah? Kemudian pertanyaan-pertanyaan lainnya yang akan menguji kamu dalam pengetahuan mengenai sampah!
             </p>
             <div class="bg-white rounded-xl shadow-lg p-6">
+            <div class="flex justify-center mb-8"></div>
+                <img src="{{url_for('static', filename='images/form_quest_header.png')}}" alt="Form Header" class="rounded-lg w-full h-auto mb-8">
                 <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSdEJr9RRTU4O0EVlj_cADF4ZxVNMdRMmCmQWrth9tI_mDnaNA/viewform?embedded=true"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSehFELgQ3FH3ka08ojVmTNEbKYVucbaeb1oFGq82mTTc8RcGQ/viewform?embedded=true"
                     width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0" class="rounded-lg">
                     Memuat...
                 </iframe>
+            </div>
+                
             </div>
         </div>
     </section>

@@ -1,78 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIPAPAT</title>
+    <title>ANGKASA Section</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
 
-    <div class="container mx-auto p-8">
-
-        <h1 class="text-3xl font-bold mb-8">SIPAPAT</h1>
-
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
-            <div class="flex justify-between items-center">
-                <h2 class="text-xl font-semibold">Tujuan SIPAPAT</h2>
-                <button id="toggleTujuan" class="text-gray-500 hover:text-gray-700 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300" 
-                         id="iconTujuan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
-            <div id="kontenTujuan" class="mt-4 transition duration-300">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo ex. 
-                    Praesent sit amet fermentum odio. Nulla facilisi. 
-                    Nulla posuere arcu vitae ligula egestas, id ultricies ipsum tristique. 
-                    Donec ac volutpat quam. Vivamus ac posuere risus. 
-                    Suspendisse potenti. Aenean fermentum, sem eget tincidunt egestas, 
-                    nunc ante volutpat augue, eu accumsan arcu orci quis ligula. </p>
-            </div>
+    <div class="bg-white p-6 rounded-2xl shadow-lg border-4 border-purple-500 max-w-4xl flex">
+        <!-- Gambar -->
+        <div class="w-1/2">
+            <img src="https://via.placeholder.com/300" alt="ANGKASA" class="w-full h-auto object-cover rounded-xl">
         </div>
 
-        <div class="bg-white rounded-lg shadow-md p-6">
-            <div class="flex justify-between items-center">
-                <h2 class="text-xl font-semibold">Latar Belakang SIPAPAT</h2>
-                <button id="toggleLatarBelakang" class="text-gray-500 hover:text-gray-700 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition duration-300"
-                         id="iconLatarBelakang" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
-            <div id="kontenLatarBelakang" class="mt-4 transition duration-300">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec justo ex. 
-                    Praesent sit amet fermentum odio. Nulla facilisi. 
-                    Nulla posuere arcu vitae ligula egestas, id ultricies ipsum tristique. 
-                    Donec ac volutpat quam. Vivamus ac posuere risus. 
-                    Suspendisse potenti. Aenean fermentum, sem eget tincidunt egestas, 
-                    nunc ante volutpat augue, eu accumsan arcu orci quis ligula. </p>
-            </div>
+        <!-- Konten -->
+        <div class="w-1/2 pl-6 flex flex-col justify-center">
+            <h2 class="text-2xl font-bold text-gray-800">ANGKASA</h2>
+            <p class="text-gray-600 mt-2">
+                Aksi Nyata Giat Kelola Sampah (ANGKASA), adalah sebuah program menarik dalam mengatur pengelolaan sampah kamu! Website ini memiliki banyak fitur seperti Jejak Angka, Lokal Sampah, dan juga Form Quest 🔍✏️. Mari kita semua bijak dalam mengelola sampah setiap harinya. 🚀‼️
+            </p>
         </div>
-
     </div>
-
-    <script>
-        const tujuanButton = document.getElementById('toggleTujuan');
-        const tujuanKonten = document.getElementById('kontenTujuan');
-        const tujuanIcon = document.getElementById('iconTujuan');
-
-        tujuanButton.addEventListener('click', () => {
-            tujuanKonten.classList.toggle('hidden');
-            tujuanIcon.classList.toggle('rotate-180');
-        });
-
-        const latarBelakangButton = document.getElementById('toggleLatarBelakang');
-        const latarBelakangKonten = document.getElementById('kontenLatarBelakang');
-        const latarBelakangIcon = document.getElementById('iconLatarBelakang');
-
-        latarBelakangButton.addEventListener('click', () => {
-            latarBelakangKonten.classList.toggle('hidden');
-            latarBelakangIcon.classList.toggle('rotate-180');
-        });
-    </script>
 
 </body>
 </html>
